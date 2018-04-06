@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+# cyfry w macierzy powinny być rozdzielone przecinkami.
 
 def stopnie(m):
 	licznik=0
@@ -16,12 +17,11 @@ m=input("Podaj liczbę krawędzi:")
 
 matrix = [[0]*int(n) for i in range(int(n))]
 
-print("Podaj wierzchołki początkowe i końcowe krawędzi(oddzielone spacją):")
+print("Wpisz macierz sąsiedztwa:")
 
-for j in range (int(m)):
-	a,b=input().split(' ')
-	matrix[int(a)][int(b)]=1
-	matrix[int(b)][int(a)]=1
+for j in range (int(n)):
+	wiersz=input()
+	matrix.append(wiersz.split(','))
 
 stopnie(matrix)
 	
