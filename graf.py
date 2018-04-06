@@ -15,7 +15,7 @@ def stopnie(m):
 n=input("Podaj liczbę wierzchołków:")
 m=input("Podaj liczbę krawędzi:")
 
-matrix = [[0]*int(n) for i in range(int(n))]
+matrix = []
 
 print("Wpisz macierz sąsiedztwa:")
 
