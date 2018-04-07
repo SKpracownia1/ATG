@@ -21,7 +21,8 @@ print("Wpisz macierz sąsiedztwa:")
 
 for j in range (int(n)):
 	wiersz=input()
-	matrix.append(wiersz.split(','))
+	wiersz.split(',')
+	matrix.append(wiersz)
 
 stopnie(matrix)
 	
